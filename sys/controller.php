@@ -20,7 +20,7 @@
 		protected $conf; //object configuration data
 		protected $app; //app version and title data
                 protected $assets; // css, img, fonts and js
-		
+
 		function __construct($params=null,$dataView=null){
 			$this->params=$params;
 			$this->conf=Registry::getInstance();
@@ -28,11 +28,11 @@
                         $this->assets=(array)$this->conf->assets;
                         $this->addData($this->ext_assets($this->assets));
 			$this->addData($this->app);
-			
+
 		}
                 /**
                  * Updates assets array with path
-                 * 
+                 *
                  * @param array $array
                  * @return array
                  */
@@ -45,13 +45,13 @@
                 }
                 /**
                  * prepares assets path
-                 * 
+                 *
                  * @param string $resource
                  * @return string
                  */
                 function into_assets($resource){
                     $ext= explode('.',$resource);
-                    
+
                     switch($ext[1]){
                         case 'css':$string='pub/css/';
                             break;
@@ -66,21 +66,22 @@
                         case 'jpg':$string='pub/img/';
                             break;
                         default :
+															$string="";
                             break;
-        
+
                     }
-                    
+
                         return $string.$resource;
-                    
+
                 }
 		/**
 		 *   Merge two arrays
-		 * 
+		 *
 		 *   Merge arrays in dataView array
 		 * 	to use then lika variables in the template
 		 *   @param array $array
-		 * 
-		 * 
+		 *
+		 *
 		 * */
 		protected function addData($array){
 			if (is_array($array)){
@@ -100,8 +101,8 @@
 		 *  array data
 		 * @param $mdata  array
 		 * @return $result array
-		 * 
-		 * 
+		 *
+		 *
 		 * */
 		protected function multipleData($mdata){
 			//
@@ -116,25 +117,25 @@
 		 *  Checks if array is single or multidimensional
 		 *  @param $data array
 		 * 	@return boolean
-		 * 
+		 *
 		 * */
 		protected function is_single($data){
 				foreach ($data as  $value) {
 					if (is_array($value)){
 						return false;
-					} 
+					}
 					else {
 						return true;
 					}
 				}
 			}
-				
 
-		
+
+
 		function error(){
             $this->msg='Error. Action not defined';
          }
-		
+
 		function ajax($output){
 			ob_clean();
 			if(is_array($output)){

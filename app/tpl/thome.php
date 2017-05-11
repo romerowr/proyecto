@@ -1,4 +1,4 @@
-<?php 
+<?php
 	include 'head_common.php';
 	?>
 <body>
@@ -8,14 +8,14 @@
 		<?php for($i=0;$i<count($this->dataTable);$i++){ ?>
 			<tr>
 			<?php foreach($this->dataTable[$i] as $key=>$value) :?>
-				
+
 	        		<td><?= $value; ?></td>
-	    	
+
 	    	<?php endforeach; ?>
 	    	</tr>
 	    <?php } ?>
 	</table>
-	
-<?php 
+
+<?php
 	include 'footer_common.php';
 ?>
