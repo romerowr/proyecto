@@ -4,6 +4,7 @@
 <body>
 
 	<h1><?= $this->page; ?></h1>
+	<h1>PRUEBA RAMA TONI</h1>
 	<table class="table table-hover">
 		<?php for($i=0;$i<count($this->dataTable);$i++){ ?>
 			<tr>
