@@ -1,13 +1,13 @@
 {
 	"app":{
-		"title":"Storypub",
+		"title":"TheFancyCards",
 		"version":"1.0"
 	},
 	"dbconf_dev":{
 		"driver":"mysql",
 		"dbhost":"localhost",
-		"dbuser":"storypub",
-		"dbpass":"storypub",
+		"dbuser":"root",
+		"dbpass":"linuxlinux",
 		"dbname":"storypub"
 	},
         "dbconf_pro":{

@@ -51,7 +51,7 @@
                  */
                 function into_assets($resource){
                     $ext= explode('.',$resource);
-                    
+                    $string="";
                     switch($ext[1]){
                         case 'css':$string='pub/css/';
                             break;
