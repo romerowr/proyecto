@@ -1,26 +1,34 @@
 {
 	"app":{
+<<<<<<< HEAD
 		"title":"TheFancyCards",
+=======
+		"title":"thefancycards",
+>>>>>>> b92b1d1511826679da1b2fe6d003ce4ac0e840d9
 		"version":"1.0"
 	},
 	"dbconf_dev":{
 		"driver":"mysql",
 		"dbhost":"localhost",
 		"dbuser":"root",
+<<<<<<< HEAD
 		"dbpass":"linuxlinux",
 		"dbname":"storypub"
+=======
+		"dbpass":"root",
+		"dbname":"thefancycards"
+>>>>>>> b92b1d1511826679da1b2fe6d003ce4ac0e840d9
 	},
-        "dbconf_pro":{
+  "dbconf_pro":{
 		"driver":"mysql",
-		"dbhost":"x.x.x.x",
-		"dbuser":"",
-		"dbpass":"",
-		"dbname":""
+		"dbhost":"ktuktk",
+		"dbuser":"root",
+		"dbpass":"bgerger",
+		"dbname":"thefancycards"
 	},
-        "assets":{
-                "css":"bootstrap.min.css",
-                "js":"app.js"
-              
-        }
+  "assets":{
+    "css":"bootstrap.min.css",
+    "js":"app.js"
+  }
 
 }
