@@ -1,14 +1,27 @@
 {
 	"app":{
+<<<<<<< HEAD
+		"title":"TheFancyCards",
+=======
 		"title":"thefancycards",
+>>>>>>> b92b1d1511826679da1b2fe6d003ce4ac0e840d9
 		"version":"1.0"
 	},
 	"dbconf_dev":{
 		"driver":"mysql",
 		"dbhost":"localhost",
 		"dbuser":"root",
+<<<<<<< HEAD
+<<<<<<< HEAD
+		"dbpass":"linuxlinux",
+		"dbname":"storypub"
+=======
+		"dbpass":"root",
+=======
 		"dbpass":"",
+>>>>>>> c985441a873fe554dd29c8af4267184ea456f82b
 		"dbname":"thefancycards"
+>>>>>>> b92b1d1511826679da1b2fe6d003ce4ac0e840d9
 	},
   "dbconf_pro":{
 		"driver":"mysql",
